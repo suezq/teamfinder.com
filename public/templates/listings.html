@@ -1,0 +1,18 @@
+<div id="listings" class="page">
+	<header></header>
+	<h1>Listings</h1>
+
+	<div class="listing" ng-repeat="listing in listings" track-by="$index">
+		<p class="small-text">Name:</p><p>{{listing.pocName}}</p>
+		<p class="small-text">Email:</p><p>{{listing.pocEmail}}</p>
+		<div class="list">
+			<p class="small-text">Phone:</p><p>{{listing.pocPhone}}</p>
+			<p class="small-text">Sport:</p><p>{{listing.sport}}</p>
+			<p class="small-text">Type:</p><p>{{listing.type}}</p>
+			<p class="small-text">League:</p><p>{{listing.league}}</p>
+			<p class="small-text">City:</p><p>{{listing.city}}</p>
+		</div>
+		<a ng-show="UserEmail == listing.UserEmail" href="#/team/{{listing._id}}">Edit Team</a>
+	</div>
+
+</div>

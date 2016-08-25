@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:8080/#/home -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- App Styles -->
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./Team Finder_files/font-awesome.min.css">
+	<script src="./Team Finder_files/jquery.min.js"></script>
+	<script src="./Team Finder_files/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- <script src="/path/to/masonry.pkgd.min.js"></script> -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/admin.css">
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/landing.css">
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/teamdir.css">
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/teamgender.css">
+	<link rel="stylesheet" type="text/css" href="./Team Finder_files/teamstat.css">
+
+	<title>Team Finder</title>
+
+	<!-- Angular -->
+	<script type="text/javascript" src="./Team Finder_files/angular.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/angular-ui-router.js"></script>
+	<script src="./Team Finder_files/angular-animate.min.js"></script>
+
+
+	<!-- App Controllers -->
+	<script type="text/javascript" src="./Team Finder_files/app.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/sportsrv.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/admin.ctrl.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/landing.ctrl.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/teamdir.ctrl.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/teamstat.ctrl.js"></script>
+	<script type="text/javascript" src="./Team Finder_files/teamgender.ctrl.js"></script>
+	
+
+	
+</head>
+<body ng-app="meanApp" class="ng-scope">
+	<!-- uiView: --><div ui-view="" class="wrapper ng-scope"><header class="ng-scope">
+  
+  <div id="header">
+    <div id="nav">
+      <img src="./Team Finder_files/chemical-formula_-512.png" id="logo">
+      <p id="logo_text">TEAM FINDER</p>
+      
+      <a href="http://localhost:8080/#" class="nav_links">Log In</a>
+      <a href="http://localhost:8080/#" class="nav_links">Sign-Up</a>
+      <a href="http://localhost:8080/#" id="host_link">Find A Team</a>
+</div>
+
+<div id="welcome_text_div">
+<p id="welcome_text">Welcome Home</p>
+<p id="welcome_under_text">Find the best Local Sports Teams Here</p>
+<a href="http://localhost:8080/#" id="how_it_works">
+Find A Local Team
+</a>
+</div>
+
+<div id="searchbar_div">
+  <div id="searchbar">
+  <div id="where_div">
+  <p id="where_text">
+  What is your current location?
+  </p>
+
+</div>
+
+<div id="what_sport">
+<p id="what_text">
+What sport do you want to play?
+</p>
+</div>
+
+<div id="what_team">
+<p id="what_team_text">
+Type of Team
+
+</p>
+</div>
+
+<div id="what_league">
+<p id="what_league_text">
+League Type
+</p>
+</div>
+</div></div></div></header>
+<div id="hosting_div" class="ng-scope">
+<div id="hosting_div_1">
+<p id="find_local_teams_text">
+Find Local Teams <br> Anywhere
+</p>
+<p id="build_moments_text">
+Meet New People<br> Share Time And Experiences
+</p>
+</div>
+
+<div id="hosting_div_2">
+
+  
+
+
+
+<!-- <!- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!- Brand and toggle get grouped for better mobile display -->
+    <!-- -->
+<!-- <div class="jumbotron">
+  <h1>Team Finder</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Find a Team</a></p>
+</div>
+
+<div class="container">
+<h3>Choose your Sport</h3>
+<div class="row">
+</div>
+
+<div class="col-md-3">
+</div>
+<div class="col-md-3">
+</div><div class="col-md-3">
+</div><div class="col-md-3">
+</div>
+
+<! Scotch -->
+
+<!-- <div class="container" ng-app="meansApp" ng-controller="LandingCtrl">
+  
+  <div class="alert alert-info">
+    <p>Sort Type: {{ ctrl.sortType }}</p>
+    <p>Sort Reverse: {{ ctrl.sortReverse }}</p>
+    <p>Search Query: {{ ctrl.searchSports }}</p>
+  </div>
+  
+  <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+        <input type="text" class="form-control" placeholder="Search Sports" ng-model="ctrl.searchSports">
+      </div>      
+    </div>
+  </form>
+  
+  <table class="table table-bordered table-striped">
+    
+    <thead>
+      <tr>
+        <td>
+          <a href="#" ng-click="sortType = 'location'; sortReverse = !sortReverse">
+            Team Location
+            <span ng-show="sortType == 'location' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'location' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse">
+          Team Type 
+            <span ng-show="sortType == 'type' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'type' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'sport'; sortReverse = !sortReverse">
+          Type of Sport 
+            <span ng-show="sortType == 'sport' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'sport' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr ng-repeat="league in ctrl.sports | orderBy:sortType:sortReverse | filter:ctrl.searchSports" ng-click="ctrl.print(league)">
+        <td>{{ league.location }}</td>
+        <td>{{ league.type }}</td>
+        <td>{{ league.sport }}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+  
+  <p class="text-center text-muted">
+    <a href="#" target="_blank">Find The Best Local Sport's Team</a>
+  </p>
+  
+  <p class="text-center">
+    by <a href="http://scotch.io" target="_blank">TeamFinder.io</a>
+  </p>
+  
+</div>
+ --> </div></div></div>
+
+
+</body></html>

@@ -1,0 +1,54 @@
+<div id="index">
+  <div id="index-wrap">
+    <h1>TeamFinder</h1>
+    <a href="#/listings">Click here to view listings</a>
+    <div id="forms">
+      <div id="signup">
+        <h2>Sign up</h2>
+        <p>Which City you're in?</p>
+        <select type="text" ng-model="signup.city">
+          <option value="">Select a city</option>
+          <option value="Toronto">Toronto</option>
+          <option value="GTA">GTA</option>
+        </select>
+        <p>Which Sport do you play?</p>
+        <select type="text" ng-model="signup.sport">
+          <option value="">Select a sport</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Baseball">Baseball</option>
+          <option value="Hockey">Hockey</option>
+          <option value="Football">Football</option>
+          <option value="Soccer">Soccer</option>
+        </select>
+        <p>Which Type of Team do you play on?</p>
+        <select type="text" ng-model="signup.type">
+          <option value="">Select a type</option>
+          <option value="Womens">Womens</option>
+          <option value="Mens">Mens</option>
+          <option value="Coed">Co-Ed</option>
+        </select>
+        <p>Which League do you play on?</p>
+        <select type="text" ng-model="signup.league">
+          <option value="">Select a league</option>
+          <option value="Recreational">Recreational</option>
+          <option value="Competitive">Competitive</option>
+        </select>
+        <p>Your Email</p>
+        <input type="text" ng-model="signup.email"/>
+        <p>Your Password</p>
+        <input type="text" ng-model="signup.password"/>
+        <p>Confirm Password</p>
+        <input type="text" ng-model="signup.password2"/>
+        <button ng-click="signupUser()">Sign Up</button>
+      </div>
+      <div id="login">
+        <h2>Login</h2>
+        <p>Your Email</p>
+        <input type="text" ng-model="login.email"/>
+        <p>Your Password</p>
+        <input type="text" ng-model="login.password"/>
+        <button ng-click="loginUser()">Login</button>
+      </div>
+    </div>
+  </div>
+</div>

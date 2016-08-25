@@ -1,0 +1,39 @@
+<div id="teambyid" class="page">
+	<header></header>
+	<p class="small-text">Team created by {{team.UserEmail}}</p>
+	<p class="small-text">Point of Contact Name</p>
+	<input type="text" ng-model="team.pocName"/>
+	<p class="small-text">Point of Contact Email</p>
+	<input type="text" ng-model="team.pocEmail"/>
+	<p class="small-text">Point of Contact Phone</p>
+	<input type="text" ng-model="team.pocPhone"/>
+	<p>Which City your team is in?</p>
+      <select type="text" ng-model="team.city">
+        <option value="">Select a city</option>
+        <option value="Toronto">Toronto</option>
+        <option value="GTA">GTA</option>
+      </select>
+      <p>Which Sport does your team play?</p>
+      <select type="text" ng-model="team.sport">
+        <option value="">Select a sport</option>
+        <option value="Basketball">Basketball</option>
+        <option value="Baseball">Baseball</option>
+        <option value="Hockey">Hockey</option>
+        <option value="Football">Football</option>
+        <option value="Soccer">Soccer</option>
+      </select>
+      <p>Which Type of Team do you play on?</p>
+      <select type="text" ng-model="team.type">
+        <option value="">Select a type</option>
+        <option value="Womens">Womens</option>
+        <option value="Mens">Mens</option>
+        <option value="Coed">Co-Ed</option>
+      </select>
+      <p>Which League does your team play on?</p>
+      <select type="text" ng-model="team.league">
+        <option value="">Select a league</option>
+        <option value="Recreational">Recreational</option>
+        <option value="Competitive">Competitive</option>
+      </select>
+      <button ng-click="updateTeam()">Update Team</button>
+</div>

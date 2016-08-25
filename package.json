@@ -1,10 +1,10 @@
 {
-  "name": "teamfinder.com",
+  "name": "ls",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,14 @@
   },
   "homepage": "https://github.com/suezq/teamfinder.com#readme",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "connect-redis": "^3.1.0",
     "express": "^4.14.0",
+    "express-session": "^1.14.0",
     "mongodb": "^2.2.6",
     "mongoose": "^4.5.9"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

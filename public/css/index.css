@@ -1,0 +1,169 @@
+body {
+	font-family: 'Droid Serif', Arial, sans-serif;
+	margin: 0px;
+	height: 100vh;
+	width: 100vw;
+	overflow: auto;
+	background-color: black;
+	background-image: url('/images/bishop_greenvalley_p.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div#index {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div#index h1 {
+	text-align: center;
+	color: blue;
+	background: rgba(255,255,255,0.9);
+	border-radius: 5px;
+	margin-top: 90px;
+	padding: 15px;
+}
+
+div#index a {
+	color: blue;
+	background: rgba(255,255,255,0.9);
+	border-radius: 5px;
+	display: block;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+div#index-wrap {
+	width: 100%;
+	max-width: 768px;
+	padding: 15px;
+}
+
+div#forms {
+	display: flex;
+	flex-direction: row;
+	background: rgba(255,255,255,0.9);
+	padding: 15px;
+	border-radius: 5px;
+}
+
+div#forms div {
+	width: 50%;
+}
+
+div#forms button {
+	display: block;
+	background: blue;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	margin: 15px 0px;
+	font-size: 18px;
+}
+
+div#header {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	border-bottom :1px solid black;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+div#header h1 {
+	font-size: 18px;
+	margin: 0px 15px;
+}
+
+div#header a {
+	margin-right: 15px;
+	text-decoration: none;
+	color: blue;
+}
+
+div.page {
+	max-width: 768px;
+	width: 100%;
+	border: 1px solid black;
+	margin: auto;
+	padding: 50px 15px 15px 15px;
+	background: rgba(255,255,255,0.5);
+}
+
+div.page div.columns {
+	display: flex;
+	flex-direction: row;
+}
+
+div.page div.columns div.column {
+	width: 50%;
+}
+
+div.page div.listing a, div.page button {
+	background: blue;
+	color: white;
+	padding: 10px;
+	font-size: 18px;
+	display: block;
+	margin :15px 0px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+div#listings h1 {
+	text-align: center;
+}
+
+div.listing {
+	display: block;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 5px;
+	background: white;
+	overflow: auto;
+}
+
+div.listing p {
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+div.listing div.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.list p {
+	width: 75%;
+}
+
+div.list p:nth-of-type(odd) {
+	width: 25%;
+}
+
+div.listing a {
+	display: block;
+	float: right;
+}
+
+p.small-text {
+	font-size: 12px;
+	color: blue;
+	margin: 0px;
+}
